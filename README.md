@@ -71,7 +71,7 @@ Solution: Implemented custom JavaScript functions.
 
 The project was deployed using [Vercel].
 
-Live Link: []
+Live Link: [https://plp-space-tourism-web.vercel.app/]
 
 9. Future Improvements
 
