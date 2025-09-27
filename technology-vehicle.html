@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./starter-code/assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Space tourism website</title>
+     <style>
+      * {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+  padding-right: 0px;
+  background: url(./starter-code/assets/technology/background-technology-desktop.jpg);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  padding-right: 100px;
+  padding-left: 80px;
+  /* position: relative; */
+  /* background-color: #999696; */
+  backdrop-filter: blur(10px);
+  background-color: rgba(185, 184, 184, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+  /* filter: blur(3px); */
+  /* opacity: 0.1; */
+}
+h3 {
+  padding: 20px;
+}
+.bar {
+  gap: 10px;
+  display: flex;
+  /* background-color: greenyellow; */
+  margin-bottom: -30px;
+  margin-left: -30px;
+}
+#home {
+  border-bottom: 3px solid white;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+.color {
+  background-color: #999696;
+  opacity: 0.1;
+  width: 40%;
+  height: 0.2vh;
+  border-radius: 10px;
+  transform: translate(30px, 0px);
+}
+.logo {
+  margin-right: 30px;
+  width: 5%;
+}
+
+.nav a {
+  font-size: small;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: white;
+}
+.num {
+  width: 8%;
+  height: 50px;
+  margin: 10px;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 80px;
+  width: 50%;
+  border: 1px solid white;
+  /* padding-top: ; */
+  transform: translate(0px, 30px);
+}
+h3 {
+  color: white;
+  padding: 50px;
+  /* background-color: blueviolet; */
+  font-family: sans-serif;
+  font-weight: lighter;
+  font-size: medium;
+}
+h1 {
+  /* text-align: left; */
+  padding-bottom: 20px;
+}
+span {
+  font-size: small;
+  padding-left: 0px;
+  color: #999696;
+  /* background-color: gray; */
+  padding-bottom: 20px;
+}
+.box1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 20px;
+}
+#home {
+  border-bottom: 3px solid white;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+.cover {
+  display: flex;
+  /* background-color: red; */
+  gap: 50px;
+  padding: 30px;
+  padding-bottom: 20px;
+  padding-bottom: 0px;
+  overflow: hidden;
+  /* position: relative; */
+  justify-content: center;
+}
+.column {
+  display: flex;
+  /* background-color: greenyellow; */
+}
+/* .box2 { */
+/* background-color: white; */
+/* } */
+.boxa {
+  /* background-color: white; */
+  padding-bottom: 30px;
+}
+.side {
+  /* background-color: blanchedalmond; */
+  /* position: absolute; */
+  /* left: 10px; */
+  /* background-color: red; */
+  transform: translate(300px, 0px);
+  width: 100%;
+  height: 300px;
+}
+.figure {
+  color: white;
+}
+.boxa {
+  padding-top: 30px;
+  /* background-color: greenyellow; */
+}
+.box1 {
+  color: white;
+  font-family: sans-serif;
+}
+.box1 h1 {
+  font-family: serif;
+}
+#id {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(2, 2, 48);
+}
+.box1 p {
+  font-size: small;
+}
+
+.num a {
+  text-decoration: none;
+  color: white;
+}
+.phone {
+  display: none;
+  /* background-color: green; */
+  width: 100%;
+}
+/* .side { */
+/* display: none; */
+/* } */
+@media screen and (min-width: 300px) and (max-width: 749px) {
+  body {
+    width: 100%;
+    height: 70vh;
+    padding: 0px;
+    /* margin: 0px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* background-blend-mode: overlay; */
+    background: url(./starter-code/assets/technology/background-technology-mobile.jpg);
+  }
+  .body {
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: red; */
+  }
+  .person {
+    /* position: static; */
+    position: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .cover {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+  }
+  .navbar {
+    /* background-color: yellow; */
+    width: 100%;
+  }
+  br {
+    display: none;
+  }
+  .num {
+    /* background-color: blueviolet; */
+    width: 50px;
+
+    height: 50px;
+    transform: translate(0px, 0px);
+    margin-left: 10px;
+    /* height: 100px; */
+  }
+  /* .side { */
+  /* display: none; */
+  /* } */
+  .phone {
+    display: block;
+    height: 250px;
+  }
+  .boxa {
+    /* background-color: green; */
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    padding: 0px;
+    margin: 0px;
+
+    /* gap: 10px; */
+  }
+  .side {
+    transform: translate(0px, 0px);
+    display: none;
+  }
+  .column {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  /* .mobile { */
+  /* display: flex; */
+  /* position: absolute; */
+  /* top: 10px; */
+  /* right: 0px; */
+  /* float: right; */
+  /* clear: both; */
+  /* padding: 10px; */
+  /* padding-bottom: 30px; */
+  /* } */
+  /* nav { */
+  /* display: ; */
+  /* } */
+}
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  body {
+    width: 100%;
+    height: 70vh;
+    padding: 0px;
+    /* margin: 0px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /* background-blend-mode: overlay; */
+    background: url(./starter-code/assets/technology/background-technology-tablet.jpg);
+  }
+  .body {
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .box1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: red; */
+  }
+  .person {
+    /* position: static; */
+    position: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .cover {
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+  }
+  .navbar {
+    /* background-color: yellow; */
+    width: 100%;
+  }
+  br {
+    display: none;
+  }
+  .num {
+    /* background-color: blueviolet; */
+    width: 50px;
+
+    height: 50px;
+    transform: translate(0px, 0px);
+    margin-left: 10px;
+    /* height: 100px; */
+  }
+  /* .side { */
+  /* display: none; */
+  /* } */
+  .phone {
+    display: block;
+    height: 250px;
+    width: 500px;
+    margin-left: 15%;
+  }
+  .boxa {
+    /* background-color: green; */
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    padding: 0px;
+    margin: 0px;
+
+    /* gap: 10px; */
+  }
+  .side {
+    transform: translate(0px, 0px);
+    display: none;
+  }
+  .column {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+
+  /* .mobile { */
+  /* display: flex; */
+  /* position: absolute; */
+  /* top: 10px; */
+  /* right: 0px; */
+  /* float: right; */
+  /* clear: both; */
+  /* padding: 10px; */
+  /* padding-bottom: 30px; */
+  /* } */
+  /* nav { */
+  /* display: ; */
+  /* } */
+}
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      
+      <img src="./starter-code/assets/shared/logo.svg" alt="" class="logo" />
+      <div class="color"></div>
+      <nav class="nav">
+        <div class="bar">
+          <a href="./index.html">00 Home </a>
+          <a href="./destination-moon.html">01 Destination</a>
+          <a href="./crew-commander.html">02 Crew</a>
+          <a href="./technology-vehicle.html" id="home">03 Technology</a>
+        </div>
+      </nav>
+    </nav>
+    <h3><span>03</span> SPACE LAUNCH 101</h3>
+    <div class="cover">
+      <div class="boxa">
+        <div class="num">
+          <p class="figure" id="id">
+            <a href="./technology-vehicle.html" id="id">1</a>
+          </p>
+        </div>
+        <div class="num">
+          <p class="figure"><a href="./technology-spaceport.html">2</a></p>
+        </div>
+        <div class="num">
+          <p class="figure">
+            <a href="./technology-capsule.html">3</a>
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="box1">
+          <span>THE TERMINOLOGY...</span>
+          <h1>LAUNCH VEHICLE</h1>
+          <p>
+            A launch vehicle or carrier rocket is a rocket-propelled <br />
+            vehicle used to carry a payload from Earth's surface to <br />space,
+            usually to Earth orbit or beyond. Our WEB-X <br />carrier rocket is
+            the most powerful in operation. <br />Standing 150 metres tall, it's
+            quite an awe-inspiring sight <br />
+            on the launch pad!
+          </p>
+        </div>
+        <div class="box2">
+          <img
+            src="./starter-code/assets/technology/image-launch-vehicle-landscape.jpg"
+            alt=""
+            class="phone"
+          /><img
+            src="./starter-code/assets/technology/image-launch-vehicle-portrait.jpg"
+            alt=""
+            class="side"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- 00 Home
+  01 Destination
+  02 Crew
+  03 Technology
+
+  03 Space launch 101
+
+  1
+  2
+  3
+
+  The terminology...
+  Launch vehicle
+
+   -->
+  </body>
+</html>
